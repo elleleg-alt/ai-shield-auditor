@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Reports (will be volume mounted)
+reports/*.pdf
+reports/*.json
+
+# Env files
+.env
+.env.local
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+tests/
+*.test.py
+
+# Logs
+*.log
+
+# CI/CD
+.github/
+.gitlab-ci.yml

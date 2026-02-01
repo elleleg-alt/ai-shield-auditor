@@ -1,0 +1,43 @@
+sections:
+  Identity & Access:
+    questions:
+      - "Is Multi-Factor Authentication enforced for all admins? (Yes/No/Unknown)"
+      - "Are API keys stored in a secrets manager (not in code)? (Yes/No/Unknown)"
+      - "Are IAM roles least-privileged and scoped by environment? (Yes/No/Unknown)"
+      - "Do you rotate API keys at least every 90 days? (Yes/No/Unknown)"
+  Data Governance:
+    questions:
+      - "Do you ingest proprietary/internal data into models or RAG indexes? (Yes/No/Unknown)"
+      - "Is data classified (PII/PHI/PCI) and redacted prior to storage? (Yes/No/Unknown)"
+      - "Is your vector DB encrypted at rest and in transit? (Yes/No/Unknown)"
+      - "Do you have data deletion SLAs for user prompts and logs? (Yes/No/Unknown)"
+  RAG Privacy:
+    questions:
+      - "Are retrievals ephemeral by default (no long-lived caches)? (Yes/No/Unknown)"
+      - "Do you apply document-level ACLs at query time? (Yes/No/Unknown)"
+      - "Do you sanitize retrieved chunks for secrets/PII before answer synthesis? (Yes/No/Unknown)"
+      - "Do you prevent cross-tenant leakage in multi-tenant indexes? (Yes/No/Unknown)"
+  Integrations:
+    questions:
+      - "Do connectors/plugins use OAuth with minimal scopes? (Yes/No/Unknown)"
+      - "Are third-party calls restricted from sending proprietary data? (Yes/No/Unknown)"
+      - "Are outbound egress endpoints allowlisted? (Yes/No/Unknown)"
+      - "Are webhook secrets and signing verified? (Yes/No/Unknown)"
+  Model Safety:
+    questions:
+      - "Do you test for prompt injection and jailbreaks pre-release? (Yes/No/Unknown)"
+      - "Do you block high-risk tool calls without human approval? (Yes/No/Unknown)"
+      - "Do you avoid fine-tuning on confidential data or apply differential privacy? (Yes/No/Unknown)"
+      - "Are toxicity/safety filters applied to inputs and outputs? (Yes/No/Unknown)"
+  Compliance:
+    questions:
+      - "Have you mapped applicable laws (GDPR/FERPA/HIPAA/etc.) to controls? (Yes/No/Unknown)"
+      - "Do you maintain an audit trail for model/config/embedding access? (Yes/No/Unknown)"
+      - "Do you have a DPIA/TRA for the LLM system? (Yes/No/Unknown)"
+      - "Is incident response defined for AI misuse or data exfiltration? (Yes/No/Unknown)"
+  Deployment:
+    questions:
+      - "Is the inference endpoint private (VPC/private link) vs open internet? (Yes/No/Unknown)"
+      - "Are S3/buckets for logs or embeddings public? (Yes/No/Unknown)"
+      - "Do you have safe rollback/version pinning for models? (Yes/No/Unknown)"
+      - "Is CI/CD scanning IaC, containers, and dependencies? (Yes/No/Unknown)"

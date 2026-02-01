@@ -1,0 +1,34 @@
+# Core Framework
+streamlit==1.39.0
+
+# LLM Integration
+langchain==0.2.14
+openai==1.51.0
+anthropic==0.34.2
+
+# Data & Validation
+pydantic==2.9.2
+pyyaml==6.0.2
+pandas==2.2.3
+
+# PDF Generation
+reportlab==4.2.2
+
+# Visualization
+matplotlib==3.9.2
+
+# Production Dependencies
+python-dotenv==1.0.0
+requests==2.32.3
+
+# Logging & Monitoring
+structlog==24.1.0
+
+# Security
+cryptography==42.0.5
+
+# Performance
+cachetools==5.3.3
+
+# Error Tracking (Optional - uncomment if using)
+# sentry-sdk==1.40.0

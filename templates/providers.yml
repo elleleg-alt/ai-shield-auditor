@@ -1,0 +1,11 @@
+platforms:
+  OpenAI:
+    sections: [Identity & Access, Data Governance, RAG Privacy, Integrations, Model Safety, Compliance, Deployment]
+  Azure:
+    sections: [Identity & Access, Data Governance, RAG Privacy, Integrations, Model Safety, Compliance, Deployment]
+  Anthropic:
+    sections: [Identity & Access, Data Governance, RAG Privacy, Integrations, Model Safety, Compliance, Deployment]
+  Google:
+    sections: [Identity & Access, Data Governance, RAG Privacy, Integrations, Model Safety, Compliance, Deployment]
+  Custom:
+    sections: [Identity & Access, Data Governance, RAG Privacy, Integrations, Model Safety, Compliance, Deployment]
